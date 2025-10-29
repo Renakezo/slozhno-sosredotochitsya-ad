@@ -1,8 +1,94 @@
+@charset "UTF-8";
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-	/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-	background: url('../images/cover-image-dark.png');
-	background-size: cover;
-	background-attachment: fixed;
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
+
+.header {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+}
+.header .decorated-element {
+  position: absolute;
+  top: 20px;
+  right: 48px;
+  font-size: 18px;
+  color: var(--accent-color);
+  line-height: 25px;
+}
+.header .decorated-element::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: -19px;
+  width: 9px;
+  height: 9px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+}
+.header .header__theme-menu .header__theme-menu-list {
+  margin-top: 20px;
+  justify-self: center;
+  display: flex;
+  gap: 10px;
+  color: var(--accent-color);
+}
+.header .header__theme-menu .header__theme-menu-list .header__theme-menu-button {
+  width: 70px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  text-transform: lowercase;
+  border-radius: 0;
+  cursor: pointer;
+}
+.header .header__theme-menu .header__theme-menu-list .header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color-hover);
+}
+.header .header__theme-menu .header__theme-menu-list .header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+.header .header__title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--heading-color);
+}
+.header .header__text {
+  justify-self: end;
+  align-self: center;
+  max-width: 491px;
+  width: 50%;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+  background: var(--accent-color);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}/*# sourceMappingURL=style.css.map */
