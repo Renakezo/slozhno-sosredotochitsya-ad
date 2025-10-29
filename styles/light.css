@@ -9,14 +9,31 @@
 	--heading-color: #ffc2e6;
 	--secondary-text-color: #353430;
 	--main-text-color: #353430;
+	--background-image: url('../images/cover-image-light.png');
 }
 
 .theme-light .page {
 	/* Вам также нужно будет написать ряд подобных селекторов */
-	background: url('../images/cover-image-light.png');
+	background: var(--background-image);
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
+}
+
+.theme-light .decorated-element {
+	display: none;
 }
 
 @media (prefers-color-scheme: light) {
+	:root {
+		--accent-color: #ff8dcb;
+		--heading-color: #ffc2e6;
+		--secondary-text-color: #353430;
+		--main-text-color: #353430;
+		--background-image: url('../images/cover-image-light.png');
+	}
+
+	.decorated-element {
+		display: none;
+	}
 }
