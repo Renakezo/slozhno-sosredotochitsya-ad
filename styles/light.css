@@ -7,6 +7,9 @@
 :root.theme-light {
 	--accent-color: #ff8dcb;
 	--heading-color: #ffc2e6;
+	--navbar-color: #353430;
+	--heading-sections-color: #353430;
+	--navbar-color-hover: #32312d66;
 	--secondary-text-color: #353430;
 	--main-text-color: #353430;
 	--background-image: url('../images/cover-image-light.png');
@@ -28,6 +31,9 @@
 	:root {
 		--accent-color: #ff8dcb;
 		--heading-color: #ffc2e6;
+		--navbar-color: #353430;
+		--heading-sections-color: #353430;
+		--navbar-color-hover: #32312d66;
 		--secondary-text-color: #353430;
 		--main-text-color: #353430;
 		--background-image: url('../images/cover-image-light.png');

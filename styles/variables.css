@@ -5,8 +5,10 @@
 
 :root {
 	--background-image: url('../images/cover-image-dark.png');
+	--navbar-color: #ff0070;
 	--accent-color: #ff0070;
-	--accent-color-hover: #ff007066;
+	--heading-sections-color: #ff0070;
+	--navbar-color-hover: #ff007066;
 	--heading-color: #db00ff;
 	--secondary-text-color: #000028;
 	--main-text-color: #f1b2ce;
